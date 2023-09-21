@@ -1,7 +1,12 @@
 // Exemplo 1: objeto básico
 
+let atriz = { // Declaração de um objeto chamado "atriz"
+    nome: 'Angelina Jolie',
+    nascimento: 1975, // Propriedade nascimento com valor 1975
+    filmes: 60,
+    nacionalidade: 'Estados Unidos'
+}
 
-// 1ª Digitação (Aqui)
 
 
 // Recuperando os valores
@@ -22,9 +27,21 @@ document.write('<h2 style="color: blue;">Objeto contendo array e outro objeto</h
 
 // Exemplo 2: Objeto contendo array e outro objeto
 
+let celebridade = { // Objeto um "celebridade"
+    nome: 'Scarlett Johansson',
+    idade: 37,
+    sexo: 'feminino',
+    filmes: ['Lost in Translation','The Avengers','Marriage Story'], // Array
+    cidade: 'Nova York',
+    medidas: { // Objeto dois "medidas"
+        peso: 57,
+        altura: 1.60,
+    }
+}
 
-// 2ª Digitação (Aqui)
+document.write(`Altura da celebridade: <strong>${celebridade.medidas.altura}</strong><br>`)
 
+document.write(`<strong>${celebridade.nome}</strong> é uma atriz incrivel, assista o filme: <strong>${celebridade.filmes[2]}</strong><br>`)
 
 document.write("__________________________________________________________________<br>");
 
@@ -34,7 +51,22 @@ document.write('<h2 style="color: blue;">Array do objeto</h2><br>');
 
 
 
-// 3ª Digitação (Aqui)
+let FilmesFamosos = [
+    {
+        titulo: 'pulp fiction',
+        diretor: 'Quentin Tarantino',
+    },
+    {
+        titulo: 'The Godfather',
+        diretor: 'Francis Ford Coppola',
+    },
+    {
+        titulo: 'Inception',
+        diretor: 'Christopher Nolan',
+    }
+];
+
+document.write(`Meu filme favorito é <strong>${FilmesFamosos[1].titulo}</strong> dirigido por <strong>${FilmesFamosos[1].diretor}</strong>`);
 
 
 

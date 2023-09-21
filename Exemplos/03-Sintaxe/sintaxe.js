@@ -1,10 +1,10 @@
 // Comentário de 1 linha
 /*Bloco de comentário (Shift + ALT + a) */
 
-// alert("Olá, mundo!");
+alert("Aprendendo JS no SESI!!");
 
 console.log("Olá, mundo!"); // Exibido no: Inspecionar -> Console
-// document.write("Olá, mundo!");
+document.write("Olá, mundo!");
 
 /* Variáveis
 Palavras-chave: var, let e const
@@ -23,7 +23,13 @@ document.write('<h2 style="color: blue;">Recuperando valores e concatenação</h
 // console.log(nome); 
 
 
-// 1ª Digitação (Aqui)
+document.write("<strong>Meu nome é: </strong> "+nome+"<br>")
+document.write("<strong>Estamos no ano de: </strong> "+ano+"<br>")
+document.write('<strong>Meu curso preferido é: </strong> '+curso+'<br>')
+
+// Concatenação Com Template Literal (Crase)
+
+
 
 
 
@@ -38,6 +44,7 @@ document.write('<h2 style="color: blue;">String literal/ Template String (Usando
 
 // 2ª Digitação (Aqui)
 
+document.write(`Eu sou o: <strong>${nome}</strong> e em: <strong>${ano}</strong> estou estudando: <strong>${curso}</strong>.<br>`)
 
 document.write("__________________________________________________________________<br>");
 
@@ -64,3 +71,9 @@ let total = preco * quantidade;
 
 
 // 3ª Digitação (Aqui)
+
+document.write(`
+Temos atualmente no estoque e produto: <strong>${produto}</strong> 
+na quantidade de <strong>${quantidade}</strong> 
+ao custo total de: <strong>${total}</strong>
+`)
